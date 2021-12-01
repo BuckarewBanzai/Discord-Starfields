@@ -6,11 +6,13 @@ from discord_webhook import DiscordWebhook
 url='your-discord-webhook-here'
 
 def spacename():
-    Type = ["Nebula", "Galaxy", "Cluster", "Cloud", "System", "Quasar", "Void", "Star"]
+    Type = ["Nebula", "Galaxy", "Cluster", "Cloud", "Solar System", "Quasar", "Void"]
     Size = ["Exa", "Zetta", "Giga", "Mega", "Micro", "Nano", "Pico"]
     Name = ["Aphrodite", "Apollo", "Ares", "Artemis", "Athena", "Demeter", "Dionysus", "Hades", "Hephaestus", "Hera", "Hermes", "Hestia", "Poseidon", "Zeus", "Aether", "Aion", "Chronos", "Erebus", "Eros", "Gaia", "Nyx", "Phanes", "Nesoi", "Tartarus", "Thalassa", "Thanatos", "Ourea", "Pontus"]
+    Task = ["Adjusting aperature...", "Scanning the cosmos...", "Starting new exposure...", "Calibrating lenses...", "Capturing more photons...", "Looking for new systems..."]
+    Verb = ["Found", "Discovered", "Located", "Uncovered", "Revealed", "Spotted"]
 
-    space_name = random.choice(Name) + " " + random.choice(Size) + " " + random.choice(Type)
+    space_name = random.choice(Verb) + " " + random.choice(Name) + " " + random.choice(Size) + " " + random.choice(Type) + ". " + random.choice(Task)
 
     return space_name
 
