@@ -12,7 +12,7 @@ def spacename():
 
     space_name = random.choice(Name) + " " + random.choice(Size) + " " + random.choice(Type)
 
-    send(space_name)
+    return space_name
 
 def space():
     seed = random.randint(0, 999999999999999999)
@@ -32,10 +32,13 @@ def space():
                     field += str('      ')
         field += str('\n\n\n\n\n')
 
-    #field += '\nSeed: ' + str(seed)
 
-    send(field)
-    print(len(field))
+    if len(field) < 2000:
+        send(spacename())
+        send(field)
+
+    else:
+        space()
 
 
 def send(x):
@@ -44,6 +47,5 @@ def send(x):
 
 
 while True:
-    spacename()
     space()
     time.sleep(3600)
