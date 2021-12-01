@@ -1,5 +1,5 @@
 # Discord-Starfields
-Generate random starfields with unique names for discord!
+Generate random starfields with unique names for discord! This bot will discover a new starfield every hour. 
 
 ![alt text](example.PNG "Starfield")
 
