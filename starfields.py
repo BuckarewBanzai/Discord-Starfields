@@ -10,7 +10,6 @@ def spacename():
     Size = ["Exa", "Zetta", "Giga", "Mega", "Micro", "Nano", "Pico"]
     Name = ["Aphrodite", "Apollo", "Ares", "Artemis", "Athena", "Demeter", "Dionysus", "Hades", "Hephaestus", "Hera", "Hermes", "Hestia", "Poseidon", "Zeus", "Aether", "Aion", "Chronos", "Erebus", "Eros", "Gaia", "Nyx", "Phanes", "Nesoi", "Tartarus", "Thalassa", "Thanatos", "Ourea", "Pontus"]
 
-
     space_name = random.choice(Name) + " " + random.choice(Size) + " " + random.choice(Type)
 
     send(space_name)
