@@ -5,7 +5,7 @@ Generate random starfields with unique names for discord!
 
 
 ## Usage:
-
+First add your webhook url in starfields.py
 #### Build and deploy the starfield bot on docker
 > sudo ./control.sh build
 
